@@ -9,6 +9,8 @@ class main
     static public function start()
     {
         $records = csv::getRecords();
+        $table = html::generateTable($records);
+        system::printPage($table);
         echo 'test';
     }
 }
@@ -16,7 +18,8 @@ class csv {
 
     static public function getRecords()
     {
-        echo 'test';
+        $records = 'test';
+        return $records;
     }
 }
 class html{
